@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Container, Form } from "react-bootstrap";
 
-type MessageInputProps = {
+type MessageInputProps= {
     socket: any;
 }
 
@@ -25,7 +25,7 @@ const MessageInput: React.FC<MessageInputProps> = ({ socket }) => {
     return (
         <Container>
             <Form>
-                <Form.Label style={{ font: "aria", color:"lightpink" }}>
+                <Form.Label style={{ font: "aria", color:"darkslategray" }}>
                 Type your message
                 </Form.Label>
                 <Form.Control
@@ -38,8 +38,8 @@ const MessageInput: React.FC<MessageInputProps> = ({ socket }) => {
                 ></Form.Control>
             </Form>
         </Container>
-    )
-}
+    );
+};
 
 
 export default MessageInput;

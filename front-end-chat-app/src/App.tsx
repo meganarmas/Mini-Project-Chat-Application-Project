@@ -22,7 +22,7 @@ function App() {
   return (
     <Routes>
       <Route path='/' element={<HomePage socket={socket} />} />
-      <Route path='/' element={<ChatPage socket={socket} />} />
+      <Route path='/chat' element={<ChatPage socket={socket} />} />
     </Routes>
   )
 }
